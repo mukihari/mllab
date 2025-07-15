@@ -1,5 +1,7 @@
-import matplotlib.pyplot as plt import seaborn as sns
-from sklearn.datasets import load_iris import pandas as pd
+import matplotlib.pyplot as plt 
+import seaborn as sns
+from sklearn.datasets import load_iris 
+import pandas as pd
 # Load the Iris dataset 
 iris = load_iris()
 # Convert the dataset to a pandas DataFrame
