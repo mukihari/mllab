@@ -1,5 +1,6 @@
 from sklearn.datasets import load_iris
-from sklearn.tree import DecisionTreeClassifier, plot_tree import matplotlib.pyplot as plt
+from sklearn.tree import DecisionTreeClassifier, plot_tree 
+import matplotlib.pyplot as plt
 
 # Load the Iris dataset iris = load_iris()
 X = iris.data y = iris.target
