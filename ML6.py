@@ -1,5 +1,7 @@
 from sklearn.datasets import load_iris
-from sklearn.model_selection import train_test_split from sklearn.neighbors import KNeighborsClassifier from sklearn import metrics
+from sklearn.model_selection import train_test_split 
+from sklearn.neighbors import KNeighborsClassifier 
+from sklearn import metrics
 # Load the Iris dataset (or any other dataset you want to use) 
 iris = load_iris()
 X = iris.data y = iris.target
@@ -16,9 +18,9 @@ predictions = knn_classifier.predict(X_test)
 # Evaluate the performance of the classifier
 accuracy = metrics.accuracy_score(y_test, predictions) 
 print(f"Accuracy: {accuracy}")
-# You can also print other evaluation metrics if needed
-# For example, classification report and confusion matrix 
+# Classification report and confusion matrix 
 print("Classification Report:") 
 print(metrics.classification_report(y_test, predictions)) 
+
 print("Confusion Matrix:") 
 print(metrics.confusion_matrix(y_test, predictions))
