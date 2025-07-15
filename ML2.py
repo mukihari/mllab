@@ -17,7 +17,8 @@ from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split 
 from sklearn.neighbors import KNeighborsClassifier 
 from sklearn import metrics
-# Load Iris dataset (a popular example dataset in machine learning) iris = load_iris()
+# Load Iris dataset (a popular example dataset in machine learning) 
+iris = load_iris()
 X = iris.data # Features
 y = iris.target # Target variable
 # Split the dataset into training and testing sets
