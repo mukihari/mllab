@@ -7,13 +7,13 @@ X = iris.data y = iris.target
 class_names = [str(name) for name in iris.target_names]
 
 # Initialize the Decision Tree Classifier 
-decision_tree = DecisionTreeClassifier()
+model = DecisionTreeClassifier()
 
 # Train the classifier on the entire dataset 
-decision_tree.fit(X, y)
+model.fit(X, y)
 
 # Visualize the Decision Tree 
 plt.figure(figsize=(12, 8))
-plot_tree(decision_tree, feature_names=iris.feature_names, class_names=class_names) 
+plot_tree(model, feature_names=iris.feature_names, class_names=class_names) 
 plt.title("Decision Tree Visualization")
 plt.show()
