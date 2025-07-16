@@ -14,6 +14,6 @@ decision_tree.fit(X, y)
 
 # Visualize the Decision Tree 
 plt.figure(figsize=(12, 8))
-plot_tree(decision_tree, feature_names=iris.feature_names, class_names=class_names, filled=True, rounded=True) 
+plot_tree(decision_tree, feature_names=iris.feature_names, class_names=class_names) 
 plt.title("Decision Tree Visualization")
 plt.show()
