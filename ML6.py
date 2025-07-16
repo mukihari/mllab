@@ -9,12 +9,12 @@ X = iris.data y = iris.target
 X_train,	X_test,	y_train,	y_test	=	train_test_split(X,	y,	test_size=0.3, random_state=42)
 # Initialize the k-NN classifier
 k = 3 # Set the number of neighbors
-knn_classifier = KNeighborsClassifier(n_neighbors=k)
+model = KNeighborsClassifier(n_neighbors=k)
 
 # Train the classifier on the training data 
-knn_classifier.fit(X_train, y_train)
+model.fit(X_train, y_train)
 # Make predictions on the testing data 
-predictions = knn_classifier.predict(X_test)
+predictions = model.predict(X_test)
 # Evaluate the performance of the classifier
 accuracy = metrics.accuracy_score(y_test, predictions) 
 print(f"Accuracy: {accuracy}")
