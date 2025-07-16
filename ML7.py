@@ -10,11 +10,11 @@ X,y	=	make_regression(n_samples=1000,	n_features=1,	noise=20, random_state=42)
 X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.2, random_state=42)
 
 # Initialize the Linear Regression model 
-linear_reg = LinearRegression()
+model = LinearRegression()
 # Train the model on the training data 
-linear_reg.fit(X_train, y_train)
+model.fit(X_train, y_train)
 # Make predictions on the testing data 
-predictions = linear_reg.predict(X_test)
+predictions = model.predict(X_test)
 # Evaluate the model's performance
 mse = mean_squared_error(y_test, predictions) 
 r2 = r2_score(y_test, predictions)
